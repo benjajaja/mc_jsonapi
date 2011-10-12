@@ -1,0 +1,25 @@
+Minecraft JSONAPI-plugin module
+
+Check https://github.com/alecgorge/jsonapi for the minecraft plugin.
+
+Example usage:
+
+var json = JSONAPI(20060, 'username', 'password', 'salt');
+json.connect(5, 4, function(status) {
+	if (status === true) {
+		json.on('error', function(message, error) {
+			// ...
+		});
+		
+		json.on('chat', function(data) {
+			console.log(data);
+		});
+
+		json.subscribe('chat');
+		json.runMethod('runConsoleCommand', ['say Hello world!']);
+
+		setTimeout(json.unload, 10000);
+	} else {
+		// could not connect
+	}
+});
