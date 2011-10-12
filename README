@@ -2,7 +2,11 @@ Minecraft JSONAPI-plugin module
 
 Check https://github.com/alecgorge/jsonapi for the minecraft plugin.
 
+Installation:  
+`npm install mc_jsonapi`
+
 Example usage:
+var JSONAPI = require('mc_jsonapi');
 
 var json = JSONAPI(20060, 'username', 'password', 'salt');
 json.connect(5, 4, function(status) {
