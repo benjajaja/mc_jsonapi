@@ -1,0 +1,16 @@
+{
+	"name": "mc_jsonapi",
+	"version": "1.0.0",
+	"description": "Connect to minecraft server running JSONAPI plugin with TCP socket",
+	"keywords": ["minecraft", "jsonapi"],
+	"homepage": "http://acechadores.com/",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/Benja-gipsy-king/mc_jsonapi.git"
+	},
+	"author": {
+		"name": "Benjamin Grosse",
+		"email": "ste3ls@gmail.com"
+	},
+	"main": "jsonapi.js"
+}
